@@ -1,0 +1,54 @@
+.background {
+	background-image: url("images/user_register.jpg") repeat-xy;
+}
+
+.column_name {
+  text-align: center;
+  font-size: 120%
+}
+.column_value {
+  text-align: left;
+}
+.column_value_center {
+  text-align: center;
+}
+.footer {
+  text-align: center;
+  font-size: 100%;
+}
+.hint {
+  font-weight: italic;
+  color: #0000FF;
+}
+.error {
+  font-weight: bold;
+  color: #FF0000;
+}
+
+.login {
+  font-style: italic;
+}
+
+form label {
+  display: inline-block;
+  width: 150px;
+  font-weight: bold;
+}
+
+td.label {
+  font-weight: bold;
+}
+
+img.profile {
+  vertical-align: top;
+}
+.comment {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: small;
+	font-style: italic;
+	line-height: normal;
+	font-weight: normal;
+	text-transform: capitalize;
+	color: #000099;
+	text-decoration: none;
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicationConfig>
+  <APP_NAME>“蒲公英"应用管理平台</APP_NAME>
+  <APP_ORG>蒲英飞扬</APP_ORG>
+  <APP_COPYRIGHT>蒲英飞扬</APP_COPYRIGHT>
+  <APP_LOGIN>true</APP_LOGIN>
+</ApplicationConfig>

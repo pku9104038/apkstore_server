@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UrlConfiguration>
+    <URL_HOST>http://www.pu-up.com</URL_HOST>
+    <URL_PORT>:80</URL_PORT>
+    <URL_ROOT>/ApkStore/</URL_ROOT>
+    <PATH_UPLOAD>upload/</PATH_UPLOAD>
+    <PATH_DOWNLOAD>download/</PATH_DOWNLOAD>
+    <PATH_APKICONS>download/icons/</PATH_APKICONS>
+    <PATH_GROUPICONS>download/gui/</PATH_GROUPICONS>
+</UrlConfiguration>

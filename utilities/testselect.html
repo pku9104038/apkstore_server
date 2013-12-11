@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form name="myForm">	 
+	省： 
+	<select name="chapter" onChange="setSection(this.selectedIndex)">	 
+	</select>
+	市：	 
+	<select name="section">	 </select>	 
+</form>	 
+
+<script language="javascript" type="text/javascript">	 
+	 
+var section1 = new Array();	 
+section1[0] = ["成都","section1.1"] 
+section1[1] = ["资阳","section1.2"]	 
+section1[2] = ["绵阳","section1.3"]
+var section2 = new Array();	 
+section2[0] = ["乌鲁木齐","section2.1"]	 
+section2[1] = ["库尔勒","section2.2"]	 
+section2[2] = ["伊犁","section2.3"]
+var section3 = new Array();	 
+section3[0] = ["杭州","section3.1"]	 
+section3[1] = ["嘉兴","section3.2"] 
+section3[2] = ["绍兴","section3.3"]	 
+var chapterArr = new Array();	 
+chapterArr[0] = ["四川","chapter1",section1];	 
+chapterArr[1] = ["新疆","chapter2",section2];	 
+chapterArr[2] = ["浙江","chapter3",section3];	 
+
+function setSection(chapter)	 
+{	 
+	for (var i=document.myForm.section.length-1;i>-1;i--)	 
+	{	 
+		document.myForm.section.remove(i);	 
+	}	 
+	var arr = chapterArr[chapter][2];	 
+	for (var i=0;i<arr.length;i++)	 
+	{	 
+		document.myForm.section.options[i] = new Option(arr[i][0],arr[i][1]);	 
+	}	 
+}	 
+for (var i=0;i<chapterArr.length;i++)	 
+{ 
+	document.myForm.chapter.options[i] = new Option(chapterArr[i][0],chapterArr[i][1]);	 
+} 
+setSection(0);	 
+</script>
+
+<form name="frm">
+    <select name="s1" onChange="redirec（this.selectedIndex）">
+    <option selected>请选择</option>
+    <option value="1">脚本语言</option>
+    <option value="2">高级语言</option>
+    <option value="3">其他语言</option>
+    </select>
+    <select name="s2">
+    <option value="请选择" selected>请选择</option>
+    </select>
+    </form>
+    <script language="javascript">
+    //获取一级菜单长度
+    var select1_len = document.frm.s1.options.length;
+    var select2 = new Array（select1_len）；
+    //把一级菜单都设为数组
+    for （i=0; i<select1_len; i++）
+    {
+    select2[i] = new Array（）；
+    }
+    //定义基本选项
+    select2[0][0] = new Option（"请选择", " "）；
+    select2[1][0] = new Option（"PHP", " "）；
+    select2[1][1] = new Option（"ASP", " "）；
+    select2[1][2] = new Option（"JSP", " "）；
+    select2[2][0] = new Option（"C/C++", " "）；
+    select2[2][1] = new Option（"Java", " "）；
+    select2[2][2] = new Option（"C#", " "）；
+    select2[3][0] = new Option（"Perl", " "）；
+    select2[3][1] = new Option（"Ruby", " "）；
+    select2[3][2] = new Option（"Python", " "）；
+    
+    //联动函数
+    function redirec（x）
+    {
+    var temp = document.frm.s2;
+    for （i=0;i<select2[x].length;i++）
+    {
+    temp.options[i]=new Option（select2[x][i].text,select2[x][i].value）；
+    }
+    temp.options[0].selected=true;
+    }
+    </script>
+
+</body>
+</html>

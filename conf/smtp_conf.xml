@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SmtpConnection>
+  <SMTP_HOST>smtp.exmail.qq.com</SMTP_HOST>
+  <SMTP_PORT>465</SMTP_PORT>
+  <SMTP_AUTH>true</SMTP_AUTH>
+  <SMTP_SECURE>ssl</SMTP_SECURE>;
+  <SMTP_USERNAME>pugongying@namo.com.cn</SMTP_USERNAME>;
+  <SMTP_PASSWORD>123.com</SMTP_PASSWORD>;
+  <SMTP_FROM>pugongying@namo.com.cn</SMTP_FROM>
+  <SMTP_FROMNAME>蒲公英</SMTP_FROMNAME>
+</SmtpConnection>
