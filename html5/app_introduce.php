@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
 <style>
 	body 
 	{
-		background-image:url('../images/bg_normal1.jpg');
+		background-color:#CCCCCC;
 	}
 	
 	p.introduce
 	{
-		color:rgb(255,255,255);
+		color:rgb(0,0,0);
 		ont-size:28px;
 	}
 	
